@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda</title>
+    <link rel="shortcut icon" href="./img/Icono-Medicina.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style_help.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">HealthyOnBoard</h2>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="principal.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="ayuda.html" class="nav__links">Ayuda</a>
+                </li>
+                <li class="nav__items">
+                    <a href="acerca.html" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/principal.html" class="nav__links">Preguntas</a>
+                </li>
+                <img src="./img/close.svg" class="nav__close">
+            </ul>
+            <div class="nav__menu">
+                <img src="./img/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        
+    </header>
+
+    <section class="container about" id="ayuda">
+        <h2 class="subtitle">¿Necesita ayuda?.</h2>
+
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="./img/mundo.svg" class="about__icon">
+                <h3 class="about__title">En todo el mundo</h3>
+                <p class="about__paragrah">Aproximadamente el 20% de la poblacion mundial padece algun tipo de cancer</p>
+            </article>
+
+            <article class="about__icons">
+                <img src="./img/depresion.svg" class="about__icon">
+                <h3 class="about__title">¿Esta desesperanzado?</h3>
+                <p class="about__paragrah">Personas pacedientes de cancer son mas probables a padecer depresion</p>
+            </article>
+
+            <article class="about__icons">
+                <img src="./img/happy-beaming.svg" class="about__icon">
+                <h3 class="about__title">Atención Psicologíca</h3>
+                <p class="about__paragrah">Tener apoyo psicologíco le ayudara a sobrellevar mejor su padeciemiento</p>
+            </article>
+
+        </div>
+    </section>
+
+        <section class="knowledge" id="xd">
+            <div class="knowledge__container container">
+                <div class="knowledege__texts">
+                    <h2 class="subtitle">¿Desea contactar con Alguien?</h2>
+                    <p class="knowledge__paragraph">Nuestra comunidad de especialistas y usuarios será de gran ayuda en compartit conocmientos consejos, que le seran de mucha utilidad para enfrentar su caso.<br>
+                    Recuerde, siempre estamos dispuestos a dar una mano.</p>
+                    
+                        <button class="boton">
+                            <a href="ExamenesMedicos.html#team" class="nav_inks">
+                                <p>Contacte con un Asesor</p>
+                            </a>
+                        </button>
+                </div>
+
+                <figure class="knowledge__picture">
+                    <img src="./img/repremedici.jpg" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="contact-box">
+                <h3>HealthyOnBoard</h3>
+                <li><a href="principal.html" class="active">Inicio</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="ayuda.html">Ayuda</a></li>
+            </div>
+            <div class="contact-box">
+                <h3>Menu Links</h3>
+                <li><a href="Recetas.html" class="active">Recetas</a></li>
+                <li><a href="ExamenesMedicos.html">Examenes Médicos</a></li>
+                <li><a href="Medicamentos.html">Medicamentos</a></li>
+                <li><a href="enciclopedia.html">Enciclopedia</a></li>
+            </div>
+        </section>
+
+        <script>
+            window.addEventListener('mouseover', initLandbot, { once: true });
+            window.addEventListener('touchstart', initLandbot, { once: true });
+            var myLandbot;
+            function initLandbot() {
+              if (!myLandbot) {
+                var s = document.createElement('script');s.type = 'text/javascript';s.async = true;
+                s.addEventListener('load', function() {
+                  var myLandbot = new Landbot.Livechat({
+                    configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-1414028-AMA63Y1UAQSITTK3/index.json',
+                  });
+                });
+                s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.js';
+                var x = document.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+              }
+            }
+            </script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
+</body>
+</html>
